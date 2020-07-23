@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animación CSS</title>
+  <link rel="icon" type="image/png" href="img/DS-V.png">
+  <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/font/flaticon.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <section class="index_header_section"></section>
+    <nav class="index_header_nav">
+      <section class="index_header_nav_section1">
+        <img src="img/DS-V.png" alt="logo">
+        <a href="index.html">Desarrollo de Software V</a>
+      </section>
+      <section class="index_header_nav_section2">
+        <h1>Christian Gómez</h1>
+      </section>
+    </nav>
+  </header>
+
+  <section class="galeria_section">
+    <div class="galeria_section_div1">
+      <p>Proyectos Multimedia</p>
+    </div>
+    <div class="galeria_section_div2">
+      <a href="#imagenes">Imágenes</a>
+      <a href="#audio">Audio</a>
+      <a href="#video">Video</a>
+      <a href="#webgl">WebGL/Canvas</a>
+      <a href="#animation">Animation</a>
+    </div>
+  </section>
+
+  <article class="galeria_article container">
+    <div class="galeria_article_div1">
+      <h2 id="imagenes">Imágenes</h2>
+      <div class="galeria_article_div1_seccion">
+        <div class="galeria_article_div1_seccion_proyecto">
+          <figure>
+            <div>
+              <img src="img/astorga.png" alt="image_project">
+            </div>
+          </figure>
+
+          <div class="galeria_article_div1_seccion_proyecto-detalles">
+            <h3>Astorga</h3>
+            <p>Con ayuda de Photoshop CS5. Practicamos
+              la saturación y tonalidad de la imagen para dar un efecto de
+              día lluvioso.
+            </p>
+            <button>
+              <a href="wwww">Ver</a>
+            </button>
+          </div>
+
+        </div>
+        <div class="galeria_article_div1_seccion_proyecto">
+          <figure>
+            <div>
+              <img src="img/Lamborghini.jpg" alt="image_project">
+            </div>
+          </figure>
+
+          <div class="galeria_article_div1_seccion_proyecto-detalles">
+            <h3>Tune UP!</h3>
+            <p>Gracias a la herramienta "Lazo Poligonal" pudimos dar
+              un toque a nuestro auto!
+            </p>
+            <button>
+              <a href="wwww">Ver</a>
+            </button>
+          </div>
+
+        </div>
+        <div class="galeria_article_div1_seccion_proyecto">
+          <figure>
+            <div>
+              <img src="img/Chica.jpg" alt="image_project">
+            </div>
+          </figure>
+
+          <div class="galeria_article_div1_seccion_proyecto-detalles">
+            <h3>La chica!</h3>
+            <p>La opción de perfeccionar borde de la varita mágica
+              es grandiosa.</p>
+            <button>
+              <a href="wwww">Ver</a>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="galeria_article_div2">
+      <h2 id="audio">Audio</h2>
+      <div class="galeria_article_div2_seccion">
+        <div class="galeria_article_div2_seccion_proyecto">
+          <figure>
+            <div>
+              <audio src="audio/Hola a todos este es un mensaje de prueba - ECO.wav" preload="none" controls>
+            </div>
+          </figure>
+
+          <div class="galeria_article_div2_seccion_proyecto-detalles">
+            <h3>Simulando Una voz con ECO</h3>
+            <p>La aplicación Balabolka, nos permite simular una voz.
+              En este caso utilizamos la voz de Sabrina.
+            </p>
+          </div>
+
+        </div>
+        <div class="galeria_article_div2_seccion_proyecto">
+          <figure>
+            <div>
+              <audio src="audio/Sin Silvido.wav" preload="none" controls>
+            </div>
+          </figure>
+
+          <div class="galeria_article_div2_seccion_proyecto-detalles">
+            <h3>Que alguien quite ese silvido!</h3>
+            <p>Gracias a Audition de Adobe, hemos podido filtrar el audio de
+              su frecuencia espectral.
+            </p>
+          </div>
+
+        </div>
+        <div class="galeria_article_div2_seccion_proyecto">
+          <figure>
+            <div>
+              <audio src="audio/sin ssss_01.wav" preload="none" controls>
+            </div>
+          </figure>
+
+          <div class="galeria_article_div2_seccion_proyecto-detalles">
+            <h3>SSSHH!! silencio</h3>
+            <p>Audition mantiene el efecto DeEsser. Este ayuda a silenciar ese SSSHH!</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="galeria_article_div3">
+      <h2 id="video">Video</h2>
+      <div class="galeria_article_div1_seccion">
+        <div class="galeria_article_div1_seccion_proyecto">
+          <figure>
+            <div>
+              <img src="img/video_lab6.PNG" alt="video_project">
+            </div>
+          </figure>
+
+          <div class="galeria_article_div1_seccion_proyecto-detalles">
+            <h3>Laboratorio#6</h3>
+            <p>Adobe Premier cs4, nos dio la oportunidad de trabajar con composiciones y capas dentro de un video.</p>
+            <button>
+              <a href="https://drive.google.com/file/d/1h5lVLxFfMoBOEeeQsETVzgfoyO66kbr0/view?usp=sharing">Ver</a>
+            </button>
+          </div>
+
+        </div>
+        <div class="galeria_article_div1_seccion_proyecto">
+          <figure>
+            <div class="flexible_video">
+              <img src="img/video_lab7.PNG" alt="video_project">
+            </div>
+          </figure>
+
+          <div class="galeria_article_div1_seccion_proyecto-detalles">
+            <h3>Laboratorio#9</h3>
+            <p>Gracias a After efects, hemo podido utilizar la función de animación, para el espectro de audio de la
+              canción.</p>
+            <button>
+              <a href="https://drive.google.com/file/d/1RHY5FOw7KfhHmxfiZL3HbCGmqFMc6fgz/view?usp=sharing">Ver</a>
+            </button>
+          </div>
+
+        </div>
+        <div class="galeria_article_div1_seccion_proyecto">
+          <figure>
+            <div>
+              <img src="img/video_lab8.PNG" alt="video_project">
+            </div>
+          </figure>
+
+          <div class="galeria_article_div1_seccion_proyecto-detalles">
+            <h3>Laboratorio#8</h3>
+            <p>El proyecto más demandante del curso. realizar imagenes 2.5 D no es sencillo.</p>
+            <button>
+              <a href="https://drive.google.com/file/d/1vdIKPpUjktifG-gSqsqpwQ-ZvMFgoClt/view?usp=sharing">Ver</a>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="galeria_article_div4">
+      <h2 id="webgl">Canvas y WebGL</h2>
+      <div class="galeria_article_div1_seccion">
+        <div class="galeria_article_div1_seccion_proyecto">
+          <figure>
+            <div>
+              <img src="img/canvas.PNG" alt="image_project">
+            </div>
+          </figure>
+
+          <div class="galeria_article_div1_seccion_proyecto-detalles">
+            <h3>Lab93</h3>
+            <p>Practicamos con la etiquetas canvas de HTML, la cual nos permite jugar con vectores dentro del HTML</p>
+            <button>
+              <a href="labs/canvas/lab93.html">Ver</a>
+            </button>
+          </div>
+
+        </div>
+        <div class="galeria_article_div1_seccion_proyecto">
+          <figure>
+            <div>
+              <img src="img/lab102.PNG" alt="image_project">
+            </div>
+          </figure>
+
+          <div class="galeria_article_div1_seccion_proyecto-detalles">
+            <h3>Lab102</h3>
+            <p>Junto a canvas, los WebGL nos permite realizar un renderizado tanto para 2D como 3D. Logrando animaciones
+              increíbles</p>
+            <button>
+              <a href="labs/webgl/lab102.html">Ver</a>
+            </button>
+          </div>
+
+        </div>
+        <div class="galeria_article_div1_seccion_proyecto">
+          <figure>
+            <div>
+              <img src="img/lab103.PNG" alt="image_project">
+            </div>
+          </figure>
+
+          <div class="galeria_article_div1_seccion_proyecto-detalles">
+            <h3>Lab103</h3>
+            <p>Seguimos jugando con el cavas para cambiar la orientación y rotación de cubo.</p>
+            <button>
+              <a href="labs/webgl/lab103.html">Ver</a>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="galeria_article_div5">
+      <h2 id="animation">Animación</h2>
+      <div class="galeria_article_div5_seccion">
+        <div class="galeria_article_div5_seccion_proyecto">
+          <figure>
+            <div>
+              <img src="img/lab112.PNG" alt="image_project">
+            </div>
+          </figure>
+
+          <div class="galeria_article_div5_seccion_proyecto-detalles">
+            <h3>Lab112</h3>
+            <p>A la vez que probamos las animaciones, hacemos uso de los Keyframes y con ayuda de otras clases CSS
+              cambiamos su color.</p>
+            <button>
+              <a href="labs/animaciones/lab112.html">Ver</a>
+            </button>
+          </div>
+
+        </div>
+        <div class="galeria_article_div5_seccion_proyecto">
+          <figure>
+            <div>
+              <img src="img/lab116.PNG" alt="image_project">
+            </div>
+          </figure>
+
+          <div class="galeria_article_div5_seccion_proyecto-detalles">
+            <h3>Lab116</h3>
+            <p>Aplicamos la propiedad de transformaciones y podemos observar que nos permite cambiar el diseño de la
+              imagen.</p>
+            <button>
+              <a href="labs/animaciones/lab116.html">Ver</a>
+            </button>
+          </div>
+
+        </div>
+        <div class="galeria_article_div5_seccion_proyecto">
+          <figure>
+            <div>
+              <img src="img/lab117.PNG" alt="image_project">
+            </div>
+          </figure>
+
+          <div class="galeria_article_div5_seccion_proyecto-detalles">
+            <h3>Lab117</h3>
+            <p>La pseudo-clase de CSS Hover, puede hacer magia.coloca el mouse encima de la estrella.</p>
+            <button>
+              <a href="labs/animaciones/lab117.html">Ver</a>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="index_section_galeria">
+    <div class="index_section_div1">
+      <p>Recuerda que puedes ver la animación</p>
+    </div>
+
+    <div class="index_section_div2">
+      <button>
+        <a href="animation.html">Ver</a>
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <section class="index_footer_section">
+      <div class="icons">
+        <a href="https://www.facebook.com/Christian-G%C3%B3mez-102932581455109">
+          <span class="flaticon-001-facebook"></span>
+        </a>
+
+        <a href="https://twitter.com/christianogmz">
+          <span class="flaticon-002-twitter"></span>
+        </a>
+
+        <a href="https://www.instagram.com/christianogz/?hl=es-la">
+          <span class="flaticon-011-instagram"></span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/christian-g%C3%B3mez-04815a163/">
+          <span class="flaticon-010-linkedin"></span>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCrsC8yo657y74Db9x7AtscQ">
+          <span class="flaticon-008-youtube"></span>
+        </a>
+      </div>
+    </section>
+
+    <div class="index_footer_div">
+      <div class="index_header_nav_div1">
+        <p>Design by: Christian Gómez 🚀</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
