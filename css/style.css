@@ -146,7 +146,7 @@ margin-top: 65%;
 main .index_main_div4 img {
   width: 100px;
   height: 100px;
-  margin: 0 20px 0 10px;
+  margin: 0 10px 0 10px;
 }
 
 /*---------------Fin del Main---------------*/
@@ -215,15 +215,17 @@ footer .index_footer_section {
   height: 50px;
 }
 
-footer .index_footer_section .icons {
+footer .index_footer_section {
   width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-self: center;
+}
 
-  animation: pulse 5s infinite;
+.icons { 
+   animation: pulse 5s infinite;
 }
 
 footer .index_footer_section .icons a {
@@ -623,3 +625,307 @@ article .galeria_article_div5_seccion_proyecto-detalles a {
 }
 /*---------------Inicio del section de la imagen---------------*/
 /*---------------FIN DEL HTML ANIMATION---------------*/
+
+
+
+/*---------------RESPONSIVE DESIGN---------------*/
+
+@media screen and (max-width: 768px) {
+  main .index_main_section {
+    display: grid;
+    grid-template-rows: 1fr 250px;
+  }
+
+  .index_section_galeria {
+    display: grid;
+    grid-template-rows: 1fr 150px;
+  }
+
+  article .galeria_article_div1_seccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+ article .galeria_article_div2_seccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+   article .galeria_article_div5_seccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .animation_section{
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 218px;
+  background-image: url("../img/mario_fondo.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+
+  animation: animarFondo 8s linear infinite;
+  }
+
+  .personaje {
+  width: 32px;
+  height: 68px;
+  margin: 12px auto;
+}
+}
+
+
+@media screen and (max-width: 425px) {
+main {
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+  main .index_main_section {
+    display: grid;
+    grid-template-rows: 1fr 150px;
+  }
+
+header .index_header_nav_section1 a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-style: bold;
+}
+
+header .index_header_nav_section2 {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  margin-right: 30px;
+
+  animation: fadeInDown;
+  animation-duration: 3s;
+}
+
+header .index_header_nav_section2 h1 {
+font-size: 20px;
+}
+
+main {
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 60px;
+}
+
+main .index_main_div1 {
+    margin-top: 2%;
+    justify-self: center;
+}
+
+main .index_main_div1 img {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px 0 20px;
+}
+
+main .index_main_div2 {
+  color: #ffffff;
+  justify-self: center;
+  justify-content: center;
+  font-size: 30px;
+  font-style: bold;
+}
+
+main .index_main_div4 {
+    margin-top: 0;
+    justify-self: center;
+}
+
+main .index_main_div4 img {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px 0 20px;
+}
+
+.index_section_div1 {
+    color: #963A7C;
+    font-size: 30px;
+}
+
+article .galeria_article_div1_seccion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+article .galeria_article_div2_seccion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+article .galeria_article_div5_seccion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.galeria_section {
+    width: 100%;
+    height: 150px;
+    background-color: #e6e9ed;
+    display: grid;
+    grid-template-rows: 115px;
+}
+
+.galeria_section_div1 {
+    color: #963A7C;
+    font-size: 30px;
+    font-style: bold;
+    align-self: center;
+}
+
+.galeria_section_div2 {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-rows: 50px;
+}
+
+.galeria_section_div1 {
+    color: #963A7C;
+    font-size: 30px;
+    font-style: bold;
+}
+
+article .galeria_article_div1 h2 {
+    align-self: center;
+    color: #963A7C;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+article .galeria_article_div2 h2 {
+    align-self: center;
+    color: #963A7C;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+article .galeria_article_div3 h2 {
+    align-self: center;
+    color: #963A7C;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+article .galeria_article_div4 h2 {
+    align-self: center;
+    color: #963A7C;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+article .galeria_article_div5 h2 {
+    align-self: center;
+    color: #963A7C;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+  .animation_section{
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 218px;
+  background-image: url("../img/mario_fondo.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+
+  animation: animarFondo 8s linear infinite;
+  }
+
+  .personaje {
+  width: 32px;
+  height: 68px;
+  margin: 20px auto;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+  header .index_header_nav_section1 a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-style: bold;
+}
+
+header .index_header_nav_section2 h1 {
+    font-size: 15px;
+}
+
+main .index_main_div2 {
+    color: #ffffff;
+    justify-self: center;
+    justify-content: center;
+    font-size: 25px;
+    font-style: bold;
+}
+
+main .index_main_div3 button {
+    border: 0;
+    padding: 10px;
+    margin-top: 75px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: White;
+    background-color: #af5696f7;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.index_section_div1 {
+    color: #963A7C;
+    font-size: 25px;
+}
+
+.index_section_div2 button {
+    border: 0;
+    padding: 10px;
+    margin-top: 25px;
+    width: 80px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: White;
+    background-color: #af5696f7;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    animation: rubberBand 5s infinite;
+}
+footer .index_footer_div p {
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 320px) {
+  
+}
